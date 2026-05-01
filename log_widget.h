@@ -95,10 +95,10 @@ typedef enum {
  * @see			LogWidget::printMessage()
  */
 typedef struct {
-    Message_Icon_e icon;		//!< Icon type to display (see Message_Icon_e)
-    Message_Type_e type;		//!< Message category/severity (see Message_Type_e)
+    Message_Icon_e icon;            //!< Icon type to display (see Message_Icon_e)
+    Message_Type_e type;            //!< Message category/severity (see Message_Type_e)
     Message_Timestamp_e timestamp;	//!< Timestamp format (see Message_Timestamp_e)
-    QString text;			//!< Actual message content to display
+    QString text;                   //!< Actual message content to display
 } Message_TypeDef_t;
 
 namespace Ui {

@@ -3,7 +3,7 @@
  * @brief		Module of definitions and additional special functions (header file).
  * @details		Contains type definitions, structures and additional special functionality.
  * @author		Arthur Markaryan
- * @date		14.12.2025
+ * @date		01.05.2026
  * @version		1.0
  * @license		LGPL v3.0
  * @copyright	Copyright (c) 2026
@@ -39,10 +39,9 @@
  * @note		Fully thread-safe on all architectures
  * @note		Returns time from an arbitrary point (steady_clock)
  */
-    static inline uint64_t UTILS_getSystemTimeMicroseconds()
+static inline uint64_t UTILS_getSystemTimeMicroseconds()
 {
-    // Use thread-local storage for maximum performance
-    // and to avoid locks
+    // Use thread-local storage for maximum performance and to avoid locks
     static thread_local uint64_t lastTime = 0;
 
     auto now = std::chrono::steady_clock::now();
