@@ -21,6 +21,9 @@
  * @see         MainWindow::~MainWindow()
  */
 
+#include "utils.h"
+#include "log_widget.h"
+
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 
